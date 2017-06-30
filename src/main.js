@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Router from './Router';
+import Navigation from './Navigation';
 
 document.addEventListener('DOMContentLoaded', function () {
   ReactDOM.render(
-    React.createElement(Router),
+    React.createElement(Navigation),
     document.getElementById('mount')
   );
 });
