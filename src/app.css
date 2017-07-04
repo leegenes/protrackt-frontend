@@ -2,6 +2,8 @@
   width: 100%;
   height: 50px;
   background-color: #666;
+  position: absolute;
+  overflow: hidden;
 }
 
 .navlink {
@@ -23,4 +25,31 @@
 
 .navlinklogo {
   float: left;
+}
+
+.formcontainer {
+  width: 75%;
+  height: 100%;
+  margin: 50px auto;
+  display: block;
+}
+
+.formblock {
+  width: 50%;
+  margin: auto;
+}
+
+.formfield {
+  width: 100%;
+  height: 48px;
+  text-align: center;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  font-size: 24px;
+}
+
+.formfield[type=text] {
+
 }
