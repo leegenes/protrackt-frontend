@@ -1,37 +1,32 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Navigation from './Navigation';
-import Landing from './Landing';
-import SignIn from './SignIn';
-import SignUp from './SignUp';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import * as Actions from '../actions';
+{/* component imports */}
+import Navigation from '../components/Navigation';
+import '../styles/app.css';
 
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch} from 'react-router-dom';
+class App extends React.Component {
+  render() {
+    return(
+      <div>
+        {/* component rendering */}
+        <Navigation />
+      </div>
+    );
+  }
+}
 
-const Main = () => (
-  <div>
-    <Switch>
-      <Route path="/" component={Landing} />
-    </Switch>
-  </div>
-)
 
-const App = () => (
-  <div>
-    <Navigation />
-    <Main />
-  </div>
-)
+function mapStateToProps(state) {
+  return {
+    something: null
+  }
+}
 
-document.addEventListener('DOMContentLoaded', function () {
-  ReactDOM.render(
-    <div>
-      <Router>
-        <App />
-      </Router>
-    </div>,
-    document.getElementById('root')
-  );
-});
+function mapDispatchToProps(dispatch) {
+  return {
+    actions: bindActionCreators(Actions, dispatch)
+  };
+}
+export default connect(mapStateToProps, mapDispatchToProps)(App);
