@@ -19,7 +19,7 @@
   color: #666;
 }
 
-.navlinkloginstatus {
+.navlinklogin {
   float: right;
 }
 
@@ -27,19 +27,19 @@
   float: left;
 }
 
-.formcontainer {
+.form-container {
   width: 75%;
   height: 100%;
   margin: 50px auto;
   display: block;
 }
 
-.formblock {
+.form-block {
   width: 50%;
   margin: auto;
 }
 
-.formfield {
+.form-field {
   width: 100%;
   height: 48px;
   text-align: center;
@@ -50,6 +50,6 @@
   font-size: 24px;
 }
 
-.formfield[type=text] {
+.form-field[type=text] {
 
 }

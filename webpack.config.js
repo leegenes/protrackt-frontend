@@ -4,6 +4,7 @@ module.exports = {
   context: path.join(__dirname, 'src'),
   entry: [
     './index.js',
+    './styles/app.css'
   ],
   output: {
     path: path.join(__dirname, 'public'),
@@ -20,15 +21,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: [
-          { loader: 'style-loader' },
-          {
-            loader: 'css-loader',
-            options: {
-              modules: true
-            }
-          }
-        ]
+        use: [ 'style-loader', 'css-loader' ]
       }
     ]
   },
