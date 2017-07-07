@@ -1,5 +1,3 @@
-import { OPEN_MODAL, CLOSE_MODAL } from '../actions';
-
 const initialState = {
   currentModal: null,
   modalIsOpen: false
@@ -7,14 +5,14 @@ const initialState = {
 
 export default function modal(state = initialState, action) {
   switch (action.type) {
-    case OPEN_MODAL:
+    case "OPEN_MODAL":
       return {
         ...state,
         modalIsOpen: true,
-        currentModal: action.modal
+        currentModal: action.modal.selectedModal
       };
 
-    case CLOSE_MODAL:
+    case "CLOSE_MODAL":
       return {
         ...state,
         modalIsOpen: false,
