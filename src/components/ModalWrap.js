@@ -1,16 +1,19 @@
 import React from 'react';
 
+import './modal_wrap.css';
+
 const ModalWrap = (props) => {
   return (
-    <div>
-      <header>
-        <h1>{ props.title }</h1>
+    <div className="modal-container">
+      <div className="modal-header-container">
+        <div className="modal-title">{ props.title }</div>
 
-        <button onClick={props.hideModal}>Close</button>
-      </header>
+        <button className="modal-close-btn" onClick={props.hideModal}>Close</button>
+      </div>
+      <div className="modal-children">
+        { props.children }
+      </div>
 
-      { props.children }
-      
     </div>
   );
 };
