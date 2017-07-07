@@ -12,19 +12,18 @@ class App extends React.Component {
     return(
       <div>
         {/* component rendering */}
-        <Navigation />
+        <Navigation selectedModal={ selectedModal => this.props.actions.openModal({selectedModal}) } />
         <ModalWheelhouse currentModal={ this.props.currentModal }/>
 
       </div>
     );
   }
-}
-
+};
 
 function mapStateToProps(state) {
   return {
-    something: null
-  }
+    currentModal: state.modal.currentModal
+  };
 }
 
 function mapDispatchToProps(dispatch) {
