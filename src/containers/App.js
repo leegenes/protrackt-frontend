@@ -5,7 +5,6 @@ import * as Actions from '../actions';
 {/* component imports */}
 import Navigation from '../components/Navigation';
 import ModalWheelhouse from '../components/ModalWheelhouse'
-import '../styles/app.css';
 
 class App extends React.Component {
   render() {
