@@ -4,7 +4,10 @@ import { bindActionCreators } from 'redux';
 import * as Actions from '../actions';
 {/* component imports */}
 import Navigation from '../components/Navigation';
-import ModalWheelhouse from '../components/ModalWheelhouse'
+import ModalWheelhouse from '../components/ModalWheelhouse';
+import OrganizationList from '../components/OrganizationList';
+
+import '../styles/app.css';
 
 class App extends React.Component {
   render() {
@@ -14,6 +17,7 @@ class App extends React.Component {
         <Navigation selectedModal={ selectedModal => this.props.actions.openModal({selectedModal}) } />
         <ModalWheelhouse currentModal={ this.props.currentModal }
           requestClose={ () => this.props.actions.closeModal(this.props.currentModal) }/>
+        <OrganizationList organizations={ this.props.organizations }/>
 
       </div>
     );
@@ -22,7 +26,8 @@ class App extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    currentModal: state.modal.currentModal
+    currentModal: state.modal.currentModal,
+    organizations: state.organizations
   };
 }
 

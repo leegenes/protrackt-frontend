@@ -11,3 +11,9 @@ export function closeModal() {
     type: "CLOSE_MODAL"
   }
 }
+
+export function expandOrganization() {
+  return {
+    type: "EXPAND_ORGANIZATION"
+  }
+}
