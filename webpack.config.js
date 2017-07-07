@@ -1,14 +1,21 @@
 const path = require('path');
 
 module.exports = {
+  devtool: 'inline-sourcemap',
   context: path.join(__dirname, 'src'),
   entry: [
-    './index.js',
-    './styles/app.css'
+    './index.js'
   ],
   output: {
     path: path.join(__dirname, 'public'),
     filename: 'bundle.js',
+  },
+  devServer: {
+    inline: true,
+    hot: true,
+    compress: true,
+    port: 3333,
+    contentBase: path.join(__dirname, 'public')
   },
   module: {
     rules: [
