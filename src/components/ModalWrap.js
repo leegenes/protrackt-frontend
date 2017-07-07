@@ -8,7 +8,7 @@ const ModalWrap = (props) => {
       <div className="modal-header-container">
         <div className="modal-title">{ props.title }</div>
 
-        <button className="modal-close-btn" onClick={props.hideModal}>Close</button>
+        <button className="modal-close-btn" onClick={ () => props.requestClose()}>X</button>
       </div>
       <div className="modal-children">
         { props.children }

@@ -7,13 +7,21 @@ const ModalSignIn = (props) => {
   <ModalWrap
       {...props}
       title="Sign in"
-      width={400}
   >
-  <p>Choose your flavor</p>
-      <button onClick={() => signIn('facebook')}>Facebook</button>
-      <button onClick={() => signIn('google')}>Google</button>
-      <button onClick={() => signIn('twitter')}>Twitter</button>
-    </ModalWrap>
+  <p>Welcome back!</p>
+    <form className="signin-form">
+      <input className="signin-input"
+        type="text"
+        name="signin-email"
+        placeholder="myemail@me.com" />
+      <input className="signin-input"
+        type="password"
+        name="signin-password"
+        placeholder="superdupersecurepassword" />
+      <button className="signin-submit" type="submit">Sign in</button>
+    </form>
+
+  </ModalWrap>
   )
 };
 

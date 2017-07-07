@@ -7,13 +7,13 @@ const Navigation = (props) => {
     <div>
       <div className="nav-bar">
         <a href="#" className="nav-link" id="nav-link-login">PROTRACKT</a>
-        <button
+        <div
           className="nav-link"
           id="nav-link-logo"
           type="button"
           onClick={ () => props.selectedModal('SIGN_IN') }>
           Sign In
-        </button>
+        </div>
       </div>
     </div>
   )

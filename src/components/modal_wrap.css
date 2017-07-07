@@ -1,11 +1,10 @@
 .modal-container {
-  width: 400px;
-  height: 250px;
+  width: 600px;
+  height: 300px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: fixed;
-  border: 5px solid black;
 }
 
 .modal-header-container {
@@ -21,4 +20,25 @@
 
 .modal-close-btn {
   float: right;
+  border: none;
+  color: white;
+  height: 100%;
+  padding: 16px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: auto;
+  vertical-align: middle;
+}
+
+.signin-form * {
+  width: 80%;
+  height: 50px;
+  font-size: 24px;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
 }

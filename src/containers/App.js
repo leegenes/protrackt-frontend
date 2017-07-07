@@ -12,7 +12,8 @@ class App extends React.Component {
       <div>
         {/* component rendering */}
         <Navigation selectedModal={ selectedModal => this.props.actions.openModal({selectedModal}) } />
-        <ModalWheelhouse currentModal={ this.props.currentModal }/>
+        <ModalWheelhouse currentModal={ this.props.currentModal }
+          requestClose={ () => this.props.actions.closeModal(this.props.currentModal) }/>
 
       </div>
     );
