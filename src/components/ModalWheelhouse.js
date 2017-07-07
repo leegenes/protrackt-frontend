@@ -4,8 +4,8 @@ import ModalSignIn from './ModalSignIn';
 
 const ModalWheelhouse = (props) => {
   switch (props.currentModal) {
-    case 'EXPORT_DATA':
-      return <SignIn {...props}/>;
+    case 'SIGN_IN':
+      return <ModalSignIn {...props}/>;
 
     default:
       return null;

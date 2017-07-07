@@ -2,7 +2,8 @@ import React from 'react';
 
 import ModalWrap from './ModalWrap';
 
-const SignIn = (props) => {
+const ModalSignIn = (props) => {
+  return (
   <ModalWrap
       {...props}
       title="Sign in"
@@ -13,6 +14,7 @@ const SignIn = (props) => {
       <button onClick={() => signIn('google')}>Google</button>
       <button onClick={() => signIn('twitter')}>Twitter</button>
     </ModalWrap>
+  )
 };
 
-export default SignIn;
+export default ModalSignIn;
