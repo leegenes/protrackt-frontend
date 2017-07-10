@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './navigation.css';
 
@@ -18,3 +19,7 @@ const Navigation = (props) => {
 }
 
 export default Navigation;
+
+Navigation.propTypes = {
+  selectedModal: PropTypes.func.isRequired
+}

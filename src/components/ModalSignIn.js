@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import ModalWrap from './ModalWrap';
 
@@ -26,3 +27,8 @@ const ModalSignIn = (props) => {
 };
 
 export default ModalSignIn;
+
+ModalSignIn.propTypes = {
+  currentModal: PropTypes.string,
+  requestClose: PropTypes.func.isRequired
+}

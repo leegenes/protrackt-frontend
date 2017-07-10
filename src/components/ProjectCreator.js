@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import PropTypes from 'prop-types';
 
 import './project_creator.css';
 
@@ -32,3 +33,7 @@ const ProjectCreator = (props) => {
 }
 
 export default ProjectCreator;
+
+ProjectCreator.propTypes = {
+  organizations: PropTypes.object.isRequired
+}

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import OrganizationItem from './OrganizationItem';
 
 import './organization_list.css';
@@ -23,3 +24,7 @@ const OrganizationList = (props) => {
 };
 
 export default OrganizationList;
+
+OrganizationList.propTypes = {
+  organizations: PropTypes.object.isRequired
+}

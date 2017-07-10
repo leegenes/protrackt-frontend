@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './modal_wrap.css';
 
@@ -19,3 +20,9 @@ const ModalWrap = (props) => {
 };
 
 export default ModalWrap;
+
+ModalWrap.propTypes = {
+  currentModal: PropTypes.string.isRequired,
+  requestClose: PropTypes.func.isRequired,
+  title: PropTypes.string
+}
