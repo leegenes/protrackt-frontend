@@ -4,7 +4,6 @@ import './navigation.css';
 
 const Navigation = (props) => {
   return (
-    <div>
       <div className="nav-bar">
         <a href="#" className="nav-link" id="nav-link-login">PROTRACKT</a>
         <div
@@ -15,7 +14,6 @@ const Navigation = (props) => {
           Sign In
         </div>
       </div>
-    </div>
   )
 }
 

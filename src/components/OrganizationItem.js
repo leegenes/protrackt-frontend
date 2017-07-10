@@ -1,9 +1,11 @@
 import React from 'react';
 
+import './organization_item.css'
+
 const OrganizationItem = (props) => {
   return (
-    <div>
-      <li>{ props.name }</li>
+    <div className="org-header">
+      { props.name }
     </div>
   )
 }
