@@ -14,14 +14,11 @@ class App extends React.Component {
   render() {
     return(
       <div>
-        {/* component rendering */}
         <Navigation selectedModal={ selectedModal => this.props.actions.openModal({selectedModal}) } />
-        <div className="main-container">
-          <ModalWheelhouse currentModal={ this.props.currentModal }
-            requestClose={ () => this.props.actions.closeModal(this.props.currentModal) }/>
-          <ProjectCreator organizations={ this.props.organizations }/>
-          <OrganizationList organizations={ this.props.organizations }/>
-        </div>
+        <ModalWheelhouse currentModal={ this.props.currentModal }
+          requestClose={ () => this.props.actions.closeModal(this.props.currentModal) }/>
+        <ProjectCreator organizations={ this.props.organizations }/>
+        <OrganizationList organizations={ this.props.organizations }/>
       </div>
     );
   }
