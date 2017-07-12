@@ -9,16 +9,20 @@ const OrganizationList = (props) => {
     return (
       <OrganizationItem
       key={organization.name} // Will be id
-      name={organization.name} />
+      name={organization.name}
+      startDate={organization.start_date} />
     )
   })
 
   return (
-    <div className="org-list-container">
+    <div className="org-flex-container">
       <div className="org-list-header">
-        Companies
+        <div className="exp-header-item">WORK EXPERIENCE</div>
+        <div className="exp-header-item">v</div>
       </div>
+      <div className="org-list-flex">
         { organizationItems }
+      </div>
     </div>
   )
 };

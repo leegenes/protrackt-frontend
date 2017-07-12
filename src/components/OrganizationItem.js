@@ -6,7 +6,8 @@ import './organization_item.css'
 const OrganizationItem = (props) => {
   return (
     <div className="org-header">
-      { props.name }
+      <div className="org-header-item">{ props.name.toUpperCase() }</div>
+      <div className="org-header-item">v</div>
     </div>
   )
 }

@@ -1,12 +1,25 @@
-.org-list-container {
-  width: 60%;
-  float: right;
+.org-flex-container {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
 }
 
 .org-list-header {
   width: 100%;
-  height: 50px;
+  height: 75px;
   background-color: #123456;
-  font-size: 24px;
+  font-size: 48px;
   color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.exp-header-item {
+  padding-left: 15px;
+}
+
+.org-list-flex {
+  display: flex;
+  flex-direction: column;
 }
