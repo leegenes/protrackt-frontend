@@ -15,13 +15,24 @@ const OrganizationList = (props) => {
   })
 
   return (
-    <div className="org-flex-container">
-      <div className="org-list-header">
-        <div className="exp-header-item">WORK EXPERIENCE</div>
-        <div className="exp-header-item">v</div>
+    <div className="exp-flex-list type-level">
+      <div className="flex-list-item type-level">
+        <div className="flex-list-item header">
+          <div className="flex-header-item">WORK EXPERIENCE</div>
+          <div className="flex-header-item">v</div>
+        </div>
+        <div className="exp-flex-list org-level">
+          { organizationItems }
+        </div>
       </div>
-      <div className="org-list-flex">
-        { organizationItems }
+      <div className="flex-list-item type-level">
+        <div className="flex-list-item header">
+          <div className="flex-header-item">EDUCATION</div>
+          <div className="flex-header-item">v</div>
+        </div>
+        <div className="exp-flex-list org-level">
+          { organizationItems }
+        </div>
       </div>
     </div>
   )

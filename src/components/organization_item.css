@@ -1,12 +1,21 @@
-.org-header {
-  height: 60px;
-  background-color: rgb(221, 236, 247);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.flex-list-item.org-level {
+  background-color: #FFB272;
 }
 
-.org-header-item {
-    padding-left: 15px;
-    font-size: 36px;
+.flex-list-item.org-level.header {
+  background-color: #B4570A;
+}
+
+.flex-list-item.org-level :last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+.flex-list-item.role-level {
+  background-color: #5FD35F;
+}
+
+.flex-list-item.role-level.header {
+  background-color: #089008;
 }

@@ -43,3 +43,27 @@
 .flex-header-item {
   padding-left: 15px;
 }
+
+
+/*next layer*/
+.flex-list-item.org-level {
+  background-color: #FFB272;
+}
+
+.flex-list-item.org-level.header {
+  background-color: #B4570A;
+}
+
+.flex-list-item.org-level :last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+.flex-list-item.role-level {
+  background-color: #5FD35F;
+}
+
+.flex-list-item.role-level.header {
+  background-color: #089008;
+}

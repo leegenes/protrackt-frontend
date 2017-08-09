@@ -1,0 +1,16 @@
+body {
+}
+
+#root {
+}
+
+.main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-view {
+  height: 100%;
+  display: flex;
+}
